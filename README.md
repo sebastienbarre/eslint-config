@@ -24,7 +24,7 @@ Provides a `lint` command which runs ESLint with this module's `.eslintrc` in th
 
 Install this package:
 ```bash
-$ npm install --save-dependencies eslint-config-sebastienbarre
+$ npm install --save-dev eslint-config-sebastienbarre
 ```
 
 then update your `package.json`:
@@ -42,8 +42,9 @@ then update your `package.json`:
 
 ## Troubleshooting
 
-For [roadhump/SublimeLinter-eslint] to keep linting, make sure to symlink `lint` to become the new `eslint`:
+For [roadhump/SublimeLinter-eslint] to keep linting, make sure to install this package globally and symlink `lint` to become the new `eslint`:
 ```bash
+$ npm install -g eslint-config-sebastienbarre
 $ cd ~/.npm-packages/bin
 $ ln -s lint eslint
 ```
