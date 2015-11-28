@@ -38,7 +38,7 @@ then update your `package.json`:
 
 ## Thanks
 
-* Jonny Buchanan for his [Config → Tools: ESLint][insin:eslint] post detailing this approach.
+* [Jonny Buchanan][insin:github] for his [Config → Tools: ESLint][insin:eslint] post detailing this approach.
 
 ## Troubleshooting
 
@@ -91,6 +91,7 @@ All notable changes to this project are documented automatically on the Github [
 [commitizen:shield]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [commitizen]: https://github.com/commitizen/cz-cli
 [ESLint]: http://eslint.org/
+[insin:github]: https://github.com/insin
 [insin:eslint]: https://medium.com/@jbscript/config-tools-eslint-c85b6d48f7e2#.fvzzrrlfz
 [Keep a CHANGELOG]: http://keepachangelog.com/
 [roadhump/SublimeLinter-eslint]: https://github.com/roadhump/SublimeLinter-eslint
