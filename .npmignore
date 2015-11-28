@@ -1,0 +1,3 @@
+*.sublime-*
+.npmignore
+.travis.yml
