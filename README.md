@@ -38,7 +38,7 @@ then update your `package.json`:
 
 ## Thanks
 
-* [Jonny Buchanan][insin:github] for his [Config → Tools: ESLint][insin:eslint] post detailing this approach.
+* [Jonny Buchanan][insin:github] for his [Config → Tools: ESLint][insin:eslint] post detailing this approach and implementing it in [insin/eslint-config-jonnybuchanan].
 
 ## Troubleshooting
 
@@ -55,7 +55,6 @@ $ ln -s lint eslint
 
 * Email: sebastien.barre@gmail.com
 * Twitter: [sebastienbarre][sebastienbarre:Twitter]
-* Instagram: [sebastienbarre][sebastienbarre:Instagram]
 
 ## Contribute
 
@@ -75,8 +74,6 @@ All notable changes to this project are documented automatically on the Github [
 
 [_self_:build-status:shield]: https://img.shields.io/travis/sebastienbarre/eslint-config-sebastienbarre.svg
 [_self_:build-status]: https://travis-ci.org/sebastienbarre/eslint-config-sebastienbarre
-[_self_:coverage:shield]: https://img.shields.io/codecov/c/github/sebastienbarre/eslint-config-sebastienbarre.svg
-[_self_:coverage]: https://codecov.io/github/sebastienbarre/eslint-config-sebastienbarre
 [_self_:dependencies-status:shield]: https://img.shields.io/gemnasium/sebastienbarre/eslint-config-sebastienbarre.svg
 [_self_:dependencies-status]: https://gemnasium.com/sebastienbarre/eslint-config-sebastienbarre
 [_self_:issues:up-for-grabs]: https://github.com/sebastienbarre/eslint-config-sebastienbarre/labels/up-for-grabs
@@ -94,10 +91,10 @@ All notable changes to this project are documented automatically on the Github [
 [ESLint]: http://eslint.org/
 [insin:github]: https://github.com/insin
 [insin:eslint]: https://medium.com/@jbscript/config-tools-eslint-c85b6d48f7e2#.fvzzrrlfz
+[insin/eslint-config-jonnybuchanan]: https://github.com/insin/eslint-config-jonnybuchanan
 [Keep a CHANGELOG]: http://keepachangelog.com/
 [roadhump/SublimeLinter-eslint]: https://github.com/roadhump/SublimeLinter-eslint
 [sebastienbarre:email]: mailto:sebastien.barre@gmail.com
-[sebastienbarre:Instagram]: https://instagram.com/sebastienbarre/
 [sebastienbarre:Twitter]: https://twitter.com/sebastienbarre/
 [Semantic Versioning]: http://semver.org/
 [semantic-release:shield]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
