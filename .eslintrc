@@ -82,7 +82,7 @@
     "no-multi-spaces": [2, {"exceptions": {"VariableDeclarator": true} }], // disallow use of multiple spaces
     "no-new-object": 2,                    // disallow use of the Object constructor
     "no-new-wrappers": 2,                  // disallow creating new instances of String, Number, and Boolean
-    "no-param-reassign": 1,                // disallow reassignment of function parameters
+    "no-param-reassign": [2, {"props": true}], // disallow reassignment of function parameters
     "no-process-exit": 0,                  // disallow process.exit() (on by default in the node environment)
     "no-undef": 2,                         // disallow use of undeclared variables unless mentioned in a /*global */ block
     "no-underscore-dangle": [0],           // disallow dangling underscores in identifiers
