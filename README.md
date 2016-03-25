@@ -2,7 +2,7 @@
 
 A personal [ESLint] config, but with ESLint itself and all the necessary shareable config, plugins, and parser as dependencies.
 
-Provides a `lint` command which runs ESLint with this module's `.eslintrc` in the context of this module's dependencies, so I don't have to manage these dependencies in every project.
+Provides an `eslint` command which runs ESLint with this module's `.eslintrc` in the context of this module's dependencies, so I don't have to manage these dependencies in every project.
 
 [![NPM][_self_:npm:badge]][_self_:npm]
 
@@ -31,7 +31,7 @@ then update your `package.json`:
 ```json
 {
   "scripts": {
-    "lint": "lint src tests"
+    "lint": "eslint src tests"
   }
 }
 ```
@@ -42,11 +42,9 @@ then update your `package.json`:
 
 ## Troubleshooting
 
-For [roadhump/SublimeLinter-eslint] to keep linting, make sure to install this package globally and symlink `lint` to become the new `eslint`:
+For [roadhump/SublimeLinter-eslint] to lint with these settings, make sure to install this package globally:
 ```bash
 $ npm install -g eslint-config-sebastienbarre
-$ cd ~/.npm-packages/bin
-$ ln -s lint eslint
 ```
 
 ## Authors
