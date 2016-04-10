@@ -83,7 +83,7 @@
     "no-eval": 2,                          // disallow use of eval()
     "no-extend-native": 2,                 // disallow adding to native types
     "no-extra-bind": 1,                    // disallow unnecessary function binding
-    "no-extra-parens": [2, "all", { "return": false }],
+    // "no-extra-parens": [2, "all", { "return": false }],
     "no-extra-semi": 1,                    // disallow unnecessary semicolons
     "no-inner-declarations": 2,            // disallow function or variable declarations in nested blocks
     "no-invalid-this": 0,                  // disallow this keywords outside of classes or class-like objects
