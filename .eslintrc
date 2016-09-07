@@ -1,11 +1,8 @@
 {
   "extends": [
-    // "standard",
-    // "standard-react",
-    // "eslint:recommended",
-    "defaults/configurations/google"
+    "airbnb"
   ],
-  "parser": "babel-eslint",
+  // "parser": "babel-eslint",
   "env": {
     "amd": false,         // defines require() and define() as global variables as per the amd spec.
     "applescript": false, // applescript global variables.
@@ -26,13 +23,12 @@
     "goog": true
   },
   "plugins": [
-    // "babel",
     "jsdoc",
-    "react",
+    // "react",
     "smells"
   ],
   "parserOptions": {
-    "ecmaVersion": 6,
+    // "ecmaVersion": 6,
       // "arrowFunctions": true,                    // enable arrow functions
       // "binaryLiterals": false,                   // enable binary literals
       // "blockBindings": true,                     // enable let and const (aka block bindings)
@@ -53,59 +49,59 @@
       // "superInFunctions": false,                 // enable super references inside of functions
       // "templateStrings": true,                   // enable template strings
       // "unicodeCodePointEscapes": false,          // enable code point escapes
-    "ecmaFeatures": {
-      "globalReturn": false,                     // allow return statements in the global scope
-      "jsx": true                                // enable JSX
-    },
-    "sourceType": "module"
+    // "ecmaFeatures": {
+    //   "globalReturn": false,                     // allow return statements in the global scope
+    //   "jsx": true                                // enable JSX
+    // },
+    // "sourceType": "module"
       // "modules": true,                           // enable modules and global strict mode
   },
   "rules": {
-    "array-bracket-spacing": [2, "never"], // enforce spacing inside array brackets
+    // "array-bracket-spacing": [2, "never"], // enforce spacing inside array brackets
     "camelcase": [0],                      // require camel case names
-    "complexity": [2, 10],                 // specify the maximum cyclomatic complexity allowed in a program
-    "consistent-this": [0, "self"],        // enforces consistent naming when capturing the current execution context
-    "curly": 2,                            // specify curly brace conventions for all control statements
-    "dot-location": [2, "property"],       // enforces consistent newlines before or after dots
-    "eqeqeq": [2, "smart"],                // require the use of === and !==
-    "indent": [2, 2],                      // this option sets a specific tab width for your code
-    "jsx-quotes": 1,
-    "key-spacing": [2, {"beforeColon": false, "afterColon": true}], // enforces spacing between keys and values in object literal properties
-    "max-depth": [1, 3],                   // specify the maximum depth that blocks can be nested
-    "max-len": [2, 100, 2, {"ignoreComments": false, "ignoreUrls": true}], // specify the maximum length of a line in your program
-    "max-nested-callbacks": [2, 4],        // specify the maximum depth callbacks can be nested
-    "max-params": [1, 3],                  // limits the number of parameters that can be used in the function declaration.
-    "max-statements": [2, 25],             // specify the maximum number of statement allowed in a function
-    "new-cap": [2, {"capIsNew": false}],   // require a capital letter for constructors
-    "newline-after-var": 0,                // allow/disallow an empty newline after var statement
-    "no-array-constructor": 2,             // disallow use of the Array constructor
-    "no-else-return": 1,                   // disallow else after a return in an if
-    "no-eval": 2,                          // disallow use of eval()
-    "no-extend-native": 2,                 // disallow adding to native types
-    "no-extra-bind": 1,                    // disallow unnecessary function binding
-    // "no-extra-parens": [2, "all", { "return": false }],
-    "no-extra-semi": 1,                    // disallow unnecessary semicolons
-    "no-inner-declarations": 2,            // disallow function or variable declarations in nested blocks
-    "no-invalid-this": 0,                  // disallow this keywords outside of classes or class-like objects
-    "no-loop-func": 0,                     // disallow creation of functions within loops
-    "no-mixed-spaces-and-tabs": 2,         // disallow mixed spaces and tabs for indentation
-    "no-multi-spaces": [2, {"exceptions": {"VariableDeclarator": true, "ImportDeclaration": true} }], // disallow use of multiple spaces
-    "no-new-object": 2,                    // disallow use of the Object constructor
-    "no-new-wrappers": 2,                  // disallow creating new instances of String, Number, and Boolean
-    "no-param-reassign": [2, {"props": true}], // disallow reassignment of function parameters
-    "no-process-exit": 0,                  // disallow process.exit() (on by default in the node environment)
-    "no-undef": 2,                         // disallow use of undeclared variables unless mentioned in a /*global */ block
-    "no-underscore-dangle": [0],           // disallow dangling underscores in identifiers
-    "no-unneeded-ternary": 1,              // disallow conditional expressions that can be expressed with simpler constructs
-    "no-unused-vars": [2, {"vars": "all", "args": "after-used"}], // disallow declaration of variables that are not used in the code
-    "no-warning-comments": 0,              // disallow usage of configurable warning terms in comments, e.g. TODO or FIXME
-    "no-with": 2,                          // disallow use of the with statement
-    "object-curly-spacing": [2, "always"],  // require or disallow padding inside curly braces
-    "operator-linebreak": [2, "after", { "overrides": { "?": "before", ":": "before" } }], // enforce operators to be placed before or after line breaks
-    "quotes": [2, "single"],               // specify whether double or single quotes should be used
-    "radix": 1,                            // require use of the second argument for parseInt()
-    "semi": 2,                             // require or disallow use of semicolons instead of ASI
-    "strict": 0,                           // controls location of Use Strict Directives,
+    // "complexity": [2, 10],                 // specify the maximum cyclomatic complexity allowed in a program
+    // "consistent-this": [0, "self"],        // enforces consistent naming when capturing the current execution context
+    // "curly": 2,                            // specify curly brace conventions for all control statements
+    // "dot-location": [2, "property"],       // enforces consistent newlines before or after dots
+    // "eqeqeq": [2, "smart"],                // require the use of === and !==
+    // "indent": [2, 2],                      // this option sets a specific tab width for your code
+    // "jsx-quotes": 1,
+    // "key-spacing": [2, {"beforeColon": false, "afterColon": true}], // enforces spacing between keys and values in object literal properties
+    // "max-depth": [1, 3],                   // specify the maximum depth that blocks can be nested
+    // "max-len": [2, 100, 2, {"ignoreComments": false, "ignoreUrls": true}], // specify the maximum length of a line in your program
+    // "max-nested-callbacks": [2, 4],        // specify the maximum depth callbacks can be nested
+    // "max-params": [1, 3],                  // limits the number of parameters that can be used in the function declaration.
+    // "max-statements": [2, 25],             // specify the maximum number of statement allowed in a function
+    // "new-cap": [2, {"capIsNew": false}],   // require a capital letter for constructors
+    // "newline-after-var": 0,                // allow/disallow an empty newline after var statement
+    // "no-array-constructor": 2,             // disallow use of the Array constructor
+    // "no-else-return": 1,                   // disallow else after a return in an if
+    // "no-eval": 2,                          // disallow use of eval()
+    // "no-extend-native": 2,                 // disallow adding to native types
+    // "no-extra-bind": 1,                    // disallow unnecessary function binding
+    // // "no-extra-parens": [2, "all", { "return": false }],
+    // "no-extra-semi": 1,                    // disallow unnecessary semicolons
+    // "no-inner-declarations": 2,            // disallow function or variable declarations in nested blocks
+    // "no-invalid-this": 0,                  // disallow this keywords outside of classes or class-like objects
+    // "no-loop-func": 0,                     // disallow creation of functions within loops
+    // "no-mixed-spaces-and-tabs": 2,         // disallow mixed spaces and tabs for indentation
+    // "no-multi-spaces": [2, {"exceptions": {"VariableDeclarator": true, "ImportDeclaration": true} }], // disallow use of multiple spaces
+    // "no-new-object": 2,                    // disallow use of the Object constructor
+    // "no-new-wrappers": 2,                  // disallow creating new instances of String, Number, and Boolean
+    // "no-param-reassign": [2, {"props": true}], // disallow reassignment of function parameters
+    // "no-process-exit": 0,                  // disallow process.exit() (on by default in the node environment)
+    // "no-undef": 2,                         // disallow use of undeclared variables unless mentioned in a /*global */ block
+    // "no-underscore-dangle": [0],           // disallow dangling underscores in identifiers
+    // "no-unneeded-ternary": 1,              // disallow conditional expressions that can be expressed with simpler constructs
+    // "no-unused-vars": [2, {"vars": "all", "args": "after-used"}], // disallow declaration of variables that are not used in the code
+    // "no-warning-comments": 0,              // disallow usage of configurable warning terms in comments, e.g. TODO or FIXME
+    // "no-with": 2,                          // disallow use of the with statement
+    // "object-curly-spacing": [2, "always"],  // require or disallow padding inside curly braces
+    // "operator-linebreak": [2, "after", { "overrides": { "?": "before", ":": "before" } }], // enforce operators to be placed before or after line breaks
+    // "quotes": [2, "single"],               // specify whether double or single quotes should be used
+    // "radix": 1,                            // require use of the second argument for parseInt()
+    // "semi": 2,                             // require or disallow use of semicolons instead of ASI
+    // "strict": 0,                           // controls location of Use Strict Directives,
 
     // "babel/generator-star-spacing": 1,
     // "babel/new-cap": 1,
@@ -115,6 +111,40 @@
     // "babel/arrow-parens": 1,
     // "babel/no-await-in-loop": 1
 
+    "quote-props": [2, "as-needed", { "keywords": false, "unnecessary": false, "numbers": false }],
+
+    // ----------------------------------------------------------------------------------
+    // // From KW
+    // "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    // "max-len": ["warn", 160, 4, {"ignoreUrls": true}],
+    // "no-multi-spaces": ["error", { "exceptions": { "ImportDeclaration": true } }],
+    // "no-param-reassign": ["error", { "props": false }],
+    // "no-unused-vars": ["error", { "args": "none" }],
+    // "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    // "no-mixed-operators": ["error", {"allowSamePrecedence": true}],
+
+    // // Should fix that at some point but too much work...
+    // "react/no-is-mounted": "warn",
+    // "no-var": 0,
+    // "one-var": 0,
+    // "react/prefer-es6-class": 0,
+    // "no-nested-ternary": 0,
+
+    // // Not for us ;-)
+    // "jsx-a11y/label-has-for": 0,
+    "no-console": 0,
+
+    // ----------------------------------------------------------------------------------
+    // GQL Tools
+    // "no-underscore-dangle": 0,
+    // "no-console": 0,
+    // "no-use-before-define": 0,
+    // "no-unused-vars": 0,
+    // "import/prefer-default-export": 0,
+    // "no-mixed-operators": 0,
+    // "import/no-extraneous-dependencies": 0
+
+    // ----------------------------------------------------------------------------------
     "valid-jsdoc": 0,                      // do not use valid-jsdoc; we are using jsdoc plugin
     "require-jsdoc": [2, {
       "require": {
@@ -135,21 +165,23 @@
     "jsdoc/require-returns-description": 1,
     "jsdoc/require-returns-type": 1,
 
-    "react/display-name": 0,
-    "react/jsx-boolean-value": 1,
-    "react/jsx-no-undef": 1,
-    "react/jsx-sort-props": 1,
-    "react/jsx-uses-react": 1,
-    "react/jsx-uses-vars": 1,
-    "react/no-did-mount-set-state": 1,
-    "react/no-did-update-set-state": 1,
-    "react/no-multi-comp": 0,
-    "react/no-unknown-property": 1,
-    "react/prop-types": 1,
-    "react/react-in-jsx-scope": 1,
-    "react/self-closing-comp": 1,
-    "react/wrap-multilines": 0,
+    // ----------------------------------------------------------------------------------
+    // "react/display-name": 0,
+    // "react/jsx-boolean-value": 1,
+    // "react/jsx-no-undef": 1,
+    // "react/jsx-sort-props": 1,
+    // "react/jsx-uses-react": 1,
+    // "react/jsx-uses-vars": 1,
+    // "react/no-did-mount-set-state": 1,
+    // "react/no-did-update-set-state": 1,
+    // "react/no-multi-comp": 0,
+    // "react/no-unknown-property": 1,
+    // "react/prop-types": 1,
+    // "react/react-in-jsx-scope": 1,
+    // "react/self-closing-comp": 1,
+    // "react/wrap-multilines": 0,
 
+    // ----------------------------------------------------------------------------------
     "smells/no-complex-chaining": 0,
     "smells/no-complex-string-concat": 1,
     "smells/no-complex-switch-case": 0,
