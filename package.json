@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-sebastienbarre",
+  "name": "@sebastienbarre/eslint-config",
   "description": "Personal ESLint config, with dependencies",
   "license": "BSD-3-Clause",
   "author": {
@@ -39,10 +39,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sebastienbarre/eslint-config-sebastienbarre.git"
+    "url": "https://github.com/sebastienbarre/eslint-config.git"
   },
   "bugs": {
-    "url": "https://github.com/sebastienbarre/eslint-config-sebastienbarre/issues",
+    "url": "https://github.com/sebastienbarre/eslint-config/issues",
     "email": "sebastien.barre@gmail.com"
   },
   "keywords": [
