@@ -2,7 +2,7 @@
 
 # ESLint Config
 
-[![Build Status][_self_:build-status:badge]][_self_:build-status] [![License][BSD License:badge]][BSD License]  [![semantic-release][semantic-release:badge]][semantic-release] [![Commitizen friendly][commitizen:badge]][commitizen]
+[![Build Status][_self_:build-status:badge]][_self_:build-status] [![License][BSD License:badge]][BSD License] [![NPM][_self_:npm:badge]][_self_:npm] [![semantic-release][semantic-release:badge]][semantic-release] [![Commitizen friendly][commitizen:badge]][commitizen]
 
 A personal [ESLint] config, but with ESLint itself and all the necessary shareable config, plugins, and parser as dependencies.
 
@@ -80,7 +80,7 @@ All notable changes to this project are documented automatically on the Github [
 [_self_:build-status]: https://travis-ci.org/sebastienbarre/eslint-config
 [_self_:issues:available]: https://github.com/sebastienbarre/eslint-config/labels/Status%3A%20Available
 [_self_:issues]: https://github.com/sebastienbarre/eslint-config/issues
-[_self_:npm:badge]: https://nodei.co/npm/eslint-config.png?downloads=true
+[_self_:npm:badge]: https://img.shields.io/npm/v/@sebastienbarre/eslint-config.svg?maxAge=2592000
 [_self_:npm]: https://nodei.co/npm/eslint-config/
 [_self_:releases]: https://github.com/sebastienbarre/eslint-config/releases
 [_self_:repo]: https://github.com/sebastienbarre/eslint-config
