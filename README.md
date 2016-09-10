@@ -28,7 +28,7 @@ Provides an `eslint` command which runs ESLint with this module's `.eslintrc` in
 
 Install this package:
 ```bash
-$ npm install --save-dev eslint-config-sebastienbarre
+$ npm install --save-dev @sebastienbarre/eslint-config
 ```
 
 then update your `package.json`:
@@ -48,7 +48,7 @@ then update your `package.json`:
 
 For [roadhump/SublimeLinter-eslint] to lint with these settings, make sure to install this package globally:
 ```bash
-$ npm install -g eslint-config-sebastienbarre
+$ npm install -g @sebastienbarre/eslint-config
 ```
 
 ## Authors
@@ -76,14 +76,14 @@ This software is released under the [BSD License].
 
 All notable changes to this project are documented automatically on the Github [releases][_self_:releases] page. This project believes in [Semantic Versioning] and [Keep a CHANGELOG]. It uses [commitizen] and [semantic-release] to help.
 
-[_self_:build-status:badge]: https://img.shields.io/travis/sebastienbarre/eslint-config-sebastienbarre.svg
-[_self_:build-status]: https://travis-ci.org/sebastienbarre/eslint-config-sebastienbarre
-[_self_:issues:available]: https://github.com/sebastienbarre/eslint-config-sebastienbarre/labels/Status%3A%20Available
-[_self_:issues]: https://github.com/sebastienbarre/eslint-config-sebastienbarre/issues
-[_self_:npm:badge]: https://nodei.co/npm/eslint-config-sebastienbarre.png?downloads=true
-[_self_:npm]: https://nodei.co/npm/eslint-config-sebastienbarre/
-[_self_:releases]: https://github.com/sebastienbarre/eslint-config-sebastienbarre/releases
-[_self_:repo]: https://github.com/sebastienbarre/eslint-config-sebastienbarre
+[_self_:build-status:badge]: https://img.shields.io/travis/sebastienbarre/eslint-config.svg
+[_self_:build-status]: https://travis-ci.org/sebastienbarre/eslint-config
+[_self_:issues:available]: https://github.com/sebastienbarre/eslint-config/labels/Status%3A%20Available
+[_self_:issues]: https://github.com/sebastienbarre/eslint-config/issues
+[_self_:npm:badge]: https://nodei.co/npm/eslint-config.png?downloads=true
+[_self_:npm]: https://nodei.co/npm/eslint-config/
+[_self_:releases]: https://github.com/sebastienbarre/eslint-config/releases
+[_self_:repo]: https://github.com/sebastienbarre/eslint-config
 [BSD License:badge]: https://img.shields.io/badge/license-BSD--3--Clause-blue.svg
 [BSD License]: http://opensource.org/licenses/BSD-3-Clause
 [commitizen:badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
