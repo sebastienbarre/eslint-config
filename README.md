@@ -8,8 +8,6 @@ A personal [ESLint] config, but with ESLint itself and all the necessary shareab
 
 Provides an `eslint` command which runs ESLint with this module's `.eslintrc` in the context of this module's dependencies, so I don't have to manage these dependencies in every project.
 
-[![NPM][_self_:npm:badge]][_self_:npm]
-
 ## Table of Contents
 
 <!-- MarkdownTOC autolink=true bracket=round -->
@@ -81,7 +79,7 @@ All notable changes to this project are documented automatically on the Github [
 [_self_:issues:available]: https://github.com/sebastienbarre/eslint-config/labels/Status%3A%20Available
 [_self_:issues]: https://github.com/sebastienbarre/eslint-config/issues
 [_self_:npm:badge]: https://img.shields.io/npm/v/@sebastienbarre/eslint-config.svg?maxAge=2592000
-[_self_:npm]: https://nodei.co/npm/eslint-config/
+[_self_:npm]: https://www.npmjs.com/package/@sebastienbarre/eslint-config
 [_self_:releases]: https://github.com/sebastienbarre/eslint-config/releases
 [_self_:repo]: https://github.com/sebastienbarre/eslint-config
 [BSD License:badge]: https://img.shields.io/badge/license-BSD--3--Clause-blue.svg
