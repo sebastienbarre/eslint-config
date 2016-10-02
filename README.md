@@ -78,7 +78,7 @@ All notable changes to this project are documented automatically on the Github [
 [_self_:build-status]: https://travis-ci.org/sebastienbarre/eslint-config
 [_self_:issues:available]: https://github.com/sebastienbarre/eslint-config/labels/Status%3A%20Available
 [_self_:issues]: https://github.com/sebastienbarre/eslint-config/issues
-[_self_:npm:badge]: https://img.shields.io/npm/v/@sebastienbarre/eslint-config.svg?maxAge=2592000
+[_self_:npm:badge]: https://img.shields.io/npm/v/@sebastienbarre/eslint-config.svg
 [_self_:npm]: https://www.npmjs.com/package/@sebastienbarre/eslint-config
 [_self_:releases]: https://github.com/sebastienbarre/eslint-config/releases
 [_self_:repo]: https://github.com/sebastienbarre/eslint-config

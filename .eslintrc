@@ -91,7 +91,7 @@
     // "no-param-reassign": [2, {"props": true}], // disallow reassignment of function parameters
     // "no-process-exit": 0,                  // disallow process.exit() (on by default in the node environment)
     // "no-undef": 2,                         // disallow use of undeclared variables unless mentioned in a /*global */ block
-    // "no-underscore-dangle": [0],           // disallow dangling underscores in identifiers
+    "no-underscore-dangle": ["error", { "allow": ["__get__", "__set__"] }],           // disallow dangling underscores in identifiers
     // "no-unneeded-ternary": 1,              // disallow conditional expressions that can be expressed with simpler constructs
     // "no-unused-vars": [2, {"vars": "all", "args": "after-used"}], // disallow declaration of variables that are not used in the code
     // "no-warning-comments": 0,              // disallow usage of configurable warning terms in comments, e.g. TODO or FIXME
@@ -115,7 +115,7 @@
 
     // ----------------------------------------------------------------------------------
     // // From KW
-    // "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     // "max-len": ["warn", 160, 4, {"ignoreUrls": true}],
     // "no-multi-spaces": ["error", { "exceptions": { "ImportDeclaration": true } }],
     // "no-param-reassign": ["error", { "props": false }],
@@ -157,7 +157,7 @@
     "jsdoc/check-tag-names": 1,
     "jsdoc/check-types": 1,
     "jsdoc/newline-after-description": 1,
-    "jsdoc/require-description-complete-sentence": 1,
+    "jsdoc/require-description-complete-sentence": 0,
     "jsdoc/require-hyphen-before-param-description": 1,
     "jsdoc/require-param": 1,
     "jsdoc/require-param-description": 1,
