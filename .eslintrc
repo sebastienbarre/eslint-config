@@ -25,7 +25,9 @@
   "plugins": [
     "jsdoc",
     // "react",
-    "smells"
+    "smells",
+    "import",
+    "jsx-a11y"
   ],
   "parserOptions": {
     // "ecmaVersion": 6,
@@ -164,6 +166,9 @@
     "jsdoc/require-param-type": 1,
     "jsdoc/require-returns-description": 1,
     "jsdoc/require-returns-type": 1,
+
+    // ----------------------------------------------------------------------------------
+    "import/named": 2,
 
     // ----------------------------------------------------------------------------------
     // "react/display-name": 0,
