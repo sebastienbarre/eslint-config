@@ -2,21 +2,22 @@
   "extends": [
     "airbnb"
   ],
-  // "parser": "babel-eslint",
+  "parser": "babel-eslint",
   "env": {
-    "amd": false,         // defines require() and define() as global variables as per the amd spec.
-    "applescript": false, // applescript global variables.
+    "amd": false,         // defines require() & define() as global vars as per the amd spec.
+    // "applescript": false, // applescript global variables.
     "browser": true,      // browser global variables (window, etc).
     "es6": true,          // enable all ECMAScript 6 features except for modules.
-    "jasmine": true,      // adds all of the Jasmine testing global variables for version 1.3 and 2.0.
-    "jquery": false,      // jquery global variables.
-    "meteor": false,      // meteor global variables.
-    "mocha": false,       // adds all of the Mocha testing global variables.
-    "mongo": false,       // mongo global variables.
+    // "jasmine": true,      // adds all of Jasmine testing global variables for version 1.3 and 2.0.
+    "jest": true,         // adds all of Jest testing global variables
+    // "jquery": false,      // jquery global variables.
+    // "meteor": false,      // meteor global variables.
+    // "mocha": false,       // adds all of the Mocha testing global variables.
+    // "mongo": false,       // mongo global variables.
     "node": true,         // Node.js global variables and Node.js-specific rules.
     "phantomjs": false,   // phantomjs global variables.
-    "prototypejs": false, // prototypejs global variables.
-    "shelljs": false,     // shelljs global variables.
+    // "prototypejs": false, // prototypejs global variables.
+    // "shelljs": false,     // shelljs global variables.
     "worker": false       // web workers global variables.
    },
   "globals": {
@@ -24,7 +25,7 @@
   },
   "plugins": [
     "jsdoc",
-    // "react",
+    "react",
     "smells",
     "import",
     "jsx-a11y"
@@ -52,11 +53,11 @@
       // "templateStrings": true,                   // enable template strings
       // "unicodeCodePointEscapes": false,          // enable code point escapes
     // "ecmaFeatures": {
+      // "modules": true,                           // enable modules and global strict mode
     //   "globalReturn": false,                     // allow return statements in the global scope
     //   "jsx": true                                // enable JSX
     // },
-    // "sourceType": "module"
-      // "modules": true,                           // enable modules and global strict mode
+    "sourceType": "module"
   },
   "rules": {
     // "array-bracket-spacing": [2, "never"], // enforce spacing inside array brackets
@@ -117,13 +118,10 @@
 
     // ----------------------------------------------------------------------------------
     // // From KW
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     // "max-len": ["warn", 160, 4, {"ignoreUrls": true}],
     // "no-multi-spaces": ["error", { "exceptions": { "ImportDeclaration": true } }],
     // "no-param-reassign": ["error", { "props": false }],
     // "no-unused-vars": ["error", { "args": "none" }],
-    // "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
-    // "no-mixed-operators": ["error", {"allowSamePrecedence": true}],
 
     // // Should fix that at some point but too much work...
     // "react/no-is-mounted": "warn",
@@ -143,7 +141,7 @@
     // "no-use-before-define": 0,
     // "no-unused-vars": 0,
     // "import/prefer-default-export": 0,
-    // "no-mixed-operators": 0,
+    "no-mixed-operators": 0, // to avoid Unexpected mix of '*' and '+', which is perfectly fine
     // "import/no-extraneous-dependencies": 0
 
     // ----------------------------------------------------------------------------------
@@ -169,14 +167,17 @@
 
     // ----------------------------------------------------------------------------------
     "import/named": 2,
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
 
     // ----------------------------------------------------------------------------------
     // "react/display-name": 0,
     // "react/jsx-boolean-value": 1,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     // "react/jsx-no-undef": 1,
     // "react/jsx-sort-props": 1,
     // "react/jsx-uses-react": 1,
     // "react/jsx-uses-vars": 1,
+    "react/jsx-wrap-multilines": 0,
     // "react/no-did-mount-set-state": 1,
     // "react/no-did-update-set-state": 1,
     // "react/no-multi-comp": 0,
@@ -184,7 +185,6 @@
     // "react/prop-types": 1,
     // "react/react-in-jsx-scope": 1,
     // "react/self-closing-comp": 1,
-    // "react/wrap-multilines": 0,
 
     // ----------------------------------------------------------------------------------
     "smells/no-complex-chaining": 0,
@@ -192,5 +192,12 @@
     "smells/no-complex-switch-case": 0,
     "smells/no-setinterval": 0,
     "smells/no-this-assign": 1
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "bower_components", "src"]
+      }
+    }
   }
 }
