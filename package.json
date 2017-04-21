@@ -17,20 +17,26 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
+    "local": "yarn unlink && yarn link"
   },
   "engines": {
     "node": ">=0.11.x"
   },
   "dependencies": {
-    "babel-eslint": "7",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsdoc": "^3.0.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3",
-    "eslint-plugin-smells": "^1.0.1"
+    "babel-eslint": "^7.x",
+    "eslint": "^3.x",
+    "eslint-config-airbnb": "^14.x",
+    "eslint-config-prettier": "^1.x",
+    "eslint-plugin-flowtype": "^2.x",
+    "eslint-plugin-import": "^2.x",
+    "eslint-plugin-jsdoc": "^3.x",
+    "eslint-plugin-jsx-a11y": "^4.x",
+    "eslint-plugin-prettier": "^2.0.1",
+    "eslint-plugin-react": "^6.x",
+    "eslint-plugin-smells": "^1.x",
+    "prettier": "^1.1.0"
   },
   "devDependencies": {
     "commitizen": "^2.9.6",
