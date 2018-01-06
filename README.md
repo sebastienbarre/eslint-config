@@ -26,7 +26,7 @@ Provides an `eslint` command which runs ESLint with this module's `.eslintrc` in
 
 Install this package:
 ```bash
-$ npm install --save-dev @sebastienbarre/eslint-config
+$ yarn add --dev @sebastienbarre/eslint-config
 ```
 
 then update your `package.json`:
@@ -46,7 +46,7 @@ then update your `package.json`:
 
 For [roadhump/SublimeLinter-eslint] to lint with these settings, make sure to install this package globally:
 ```bash
-$ npm install -g @sebastienbarre/eslint-config
+$ yarn global add @sebastienbarre/eslint-config
 ```
 
 ## Authors
