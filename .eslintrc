@@ -4,7 +4,7 @@
    */
   "extends": [
     "airbnb",
-    "eslint:recommended",
+    // "eslint:recommended",
     "plugin:flowtype/recommended",
     "plugin:react/recommended",
     "plugin:import/errors",
@@ -73,9 +73,10 @@
   "rules": {
     "camelcase": [0],
     "max-len": ["error", {"code": 100, "ignoreComments": false, "ignoreUrls": true}],
-    "no-underscore-dangle": ["error", { "allow": ["__get__", "__set__"] }],
     "no-console": 0,
     "no-mixed-operators": 0, // to avoid Unexpected mix of '*' and '+', which is perfectly fine
+    "no-plusplus": 0,
+    "no-underscore-dangle": ["error", { "allow": ["__get__", "__set__"] }],
 
     // ----------------------------------------------------------------------------------
     "valid-jsdoc": 0,                      // do not use valid-jsdoc; we are using jsdoc plugin
