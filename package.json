@@ -1,4 +1,5 @@
 {
+  "version": "0.0.0-development",
   "name": "@sebastienbarre/eslint-config",
   "description": "Personal ESLint config, with dependencies",
   "license": "BSD-3-Clause",
