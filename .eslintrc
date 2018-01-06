@@ -1,6 +1,10 @@
 {
+  /*
+   * https://eslint.org/docs/user-guide/configuring#extending-configuration-files
+   */
   "extends": [
     "airbnb",
+    "eslint:recommended",
     "plugin:flowtype/recommended",
     "plugin:react/recommended",
     "plugin:import/errors",
@@ -11,7 +15,37 @@
     "prettier/flowtype",
     "prettier/react"
   ],
+  /*
+   * https://eslint.org/docs/user-guide/configuring#configuring-plugins
+   */
+  "plugins": [
+    "flowtype",  // https://github.com/gajus/eslint-plugin-flowtype
+    "import",    // https://github.com/benmosher/eslint-plugin-import
+    "jsdoc",     // https://github.com/gajus/eslint-plugin-jsdoc
+    "jsx-a11y",  // https://github.com/evcohen/eslint-plugin-jsx-a11y
+    "react",     // https://github.com/yannickcr/eslint-plugin-react
+    "smells",    // https://github.com/elijahmanor/eslint-plugin-smells
+    // prettier probably needs to be LAST
+    "prettier"   // https://github.com/not-an-aardvark/eslint-plugin-prettier
+  ],
+  /*
+   * https://eslint.org/docs/user-guide/configuring#specifying-parser
+   */
   "parser": "babel-eslint",
+  /*
+   * https://eslint.org/docs/user-guide/configuring#specifying-parser-options
+   */
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      // "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+  },
+  /*
+   * https://eslint.org/docs/user-guide/configuring#specifying-environments
+   */
   "env": {
     "amd": false,            // defines require() & define() as global vars as per the amd spec.
     "browser": true,         // browser global variables (window, etc).
@@ -27,26 +61,15 @@
     // "shelljs": false,     // shelljs global variables.
     "worker": false          // web workers global variables.
    },
+  /*
+   * https://eslint.org/docs/user-guide/configuring#specifying-globals
+   */
   "globals": {
     "goog": true
   },
-  "plugins": [
-    "flowtype",  // https://github.com/gajus/eslint-plugin-flowtype
-    "import",    // https://github.com/benmosher/eslint-plugin-import
-    "jsdoc",     // https://github.com/gajus/eslint-plugin-jsdoc
-    "jsx-a11y",  // https://github.com/evcohen/eslint-plugin-jsx-a11y
-    "react",     // https://github.com/yannickcr/eslint-plugin-react
-    "smells",    // https://github.com/elijahmanor/eslint-plugin-smells
-    // prettier probably needs to be LAST
-    "prettier"   // https://github.com/not-an-aardvark/eslint-plugin-prettier
-  ],
-  "parserOptions": {
-    "ecmaVersion": 2016,
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "sourceType": "module"
-  },
+  /*
+   * https://eslint.org/docs/user-guide/configuring#configuring-rules
+   */
   "rules": {
     "camelcase": [0],
     "max-len": ["error", {"code": 100, "ignoreComments": false, "ignoreUrls": true}],
